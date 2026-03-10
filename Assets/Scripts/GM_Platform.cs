@@ -3,10 +3,6 @@ using UnityEngine;
 
 public class GM_Platform : MonoBehaviour
 {
-    public UIScript uiCanvas;
-
-
-
     AudioSource confetti_sound = null;
     AudioSource fire_sound = null;
 
@@ -40,9 +36,6 @@ public class GM_Platform : MonoBehaviour
         {
             EndGame(true);
         }
-
-
-        uiCanvas.SetFlagCount(flags_collected);
     }
 
 
@@ -65,9 +58,6 @@ public class GM_Platform : MonoBehaviour
         {
             Debug.Log("You Lose!");
         }
-
-
-        uiCanvas.EndGame(win);
     }
 
 
