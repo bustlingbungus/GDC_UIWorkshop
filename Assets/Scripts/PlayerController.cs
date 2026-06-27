@@ -32,6 +32,7 @@ public class PlayerController : MonoBehaviour
         rigidbody_compoonent = GetComponent<Rigidbody>();
         // hide cursor
         Cursor.visible = false;
+        Cursor.lockState = CursorLockMode.Locked;
     }
 
 

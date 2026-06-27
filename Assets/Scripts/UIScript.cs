@@ -48,6 +48,7 @@ public class UIScript : MonoBehaviour
     public void EndGame(bool win)
     {
         Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.Confined;
         resetButton.SetActive(true);
         centerText.SetActive(true);
         game_over = true;
